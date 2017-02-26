@@ -31,7 +31,7 @@ var app = express();
 // Use native Node promises for mongoose
 mongoose.Promise = global.Promise;
 // connect to MongoDB
-mongoose.connect('mongodb://localhost/restService2db')
+mongoose.connect(process.env.MONGODB_URI)
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
 /* ---------- /Connection to mongodb block ---------- */
