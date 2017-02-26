@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %>, here is your instruction:</p>
+    <ul>
+      <li>[GET] `/users/` - get all users</li>
+      <li>[GET] `/users/:id` - get specific user by id</li>
+      <li>[POST] `/users/` - create a user</li>
+      <li>[PATCH] `/users/:id` - modify user</li>
+    </ul>
+    <h2>BONUS:</h2>
+    <ul>
+      <li>[DELETE] `/users/:id` - delete user</li>
+      <li>[GET] `/generate/:number` - create 1-10 fake users</li>
+    </ul>
+  </body>
+</html>
